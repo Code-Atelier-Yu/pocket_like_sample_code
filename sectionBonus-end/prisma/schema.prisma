@@ -20,7 +20,7 @@ model Article {
   siteName String
   description String?
   siteUpdatedAt String
-  thumbnail String?
+  thumbnail String? @db.Text
   url String @unique
   content String? @db.Text
   isLiked Boolean @default(false)
